@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones Regulares</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #333333;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #555555;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #cccccc;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            color: #000000;
+            text-align: center;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: filter 0.3s ease;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+        }
+        .button:nth-of-type(1) {
+            background-color: #d4ff5d; 
+        }
+        .button:nth-of-type(2) {
+            background-color: #ff00aa; 
+        }
+        .button:nth-of-type(3) {
+            background-color: #67f5ff; 
+        }
+        .button:nth-of-type(4) {
+            background-color: #a715eb; 
+        }
+        .button:nth-of-type(5) {
+            background-color: #990606; 
+            color: #ffffff;
+        }
+        .button:nth-of-type(6) {
+            background-color: #20176e; 
+            color: #ffffff;
+        }
+        .button:hover {
+            filter: brightness(85%);
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            background-color: #4e4d4d;
+            border-radius: 5px;
+            text-align: justify;
+        }
+        .button:hover + .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">EXPRESIONES REGULARES</div>
+        <div class="subtitle">Espinosa Antelis Gabriela Dyvheke <br> 21200592</div>
+        <button class="button">¿Qué son?</button>
+        <div class="content">
+            <!-- Contenido para "¿Qué son?" -->
+            <p style="margin-bottom: 15px;">Las expresiones regulares (o regex) son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas de texto. En JavaScript, las expresiones regulares también son objetos. Estos patrones se utilizan con los siguientes métodos:</p>
+            <img src="img/metodos.png" style="display: block; margin: 0 auto; width: 550px; height: 230px;">
+            <p style="margin-top: 15px;">Las expresiones regulares se utilizan ampliamente en programación, procesamiento de texto, análisis de datos, y en muchos otros campos donde se requiera el manejo y la manipulación de cadenas de texto de forma precisa y eficiente.</p>
+        </div>
+        <button class="button">Importancia</button>
+        <div class="content">
+            <!-- Contenido para "Importancia" -->
+           <p>Su importancia radica en su capacidad para encontrar patrones específicos dentro de grandes volúmenes de datos de manera eficiente, así como en su utilidad para validar la estructura y el formato de información de entrada.</p>  
+           <p>
+            Las expresiones regulares son vitales en el ámbito del procesamiento de texto y la manipulación de datos, destacándose por su flexibilidad y habilidad para buscar, validar y transformar cadenas de texto. Son una herramienta imprescindible para desarrolladores y profesionales de TI, ya que permiten realizar diversas tareas como validar formatos de correos electrónicos, buscar información específica en grandes conjuntos de datos y reemplazar texto basado en patrones predefinidos. En síntesis, su relevancia reside en su capacidad para abordar eficientemente problemas relacionados con el procesamiento de texto, ofreciendo soluciones precisas y eficaces.</p>
+        </div>
+        <button class="button">Casos de uso</button>
+        <div class="content">
+            <!-- Contenido para "Casos de uso" -->
+            <ul>
+                <li style="margin-bottom: 10px;"><strong>Manipulación de Texto:</strong> Con expresiones regulares, se puede manipular fácilmente el texto mediante la búsqueda y reemplazo de cadenas basadas en patrones definidos. Esto es útil en la limpieza de datos, transformación de texto y análisis de datos.</li>
+              
+                <li style="margin-bottom: 10px;"><strong>Formateo de Datos:</strong> En aplicaciones donde es necesario validar y formatear datos de entrada, las expresiones regulares son fundamentales. Por ejemplo, se pueden utilizar para verificar la validez de direcciones de correo electrónico, números de teléfono, códigos postales, etc.</li>
+              
+                <li style="margin-bottom: 10px;"><strong>Análisis de Logs:</strong> En sistemas informáticos, las expresiones regulares son ampliamente utilizadas para analizar archivos de registro (logs) y extraer información relevante, como errores, eventos importantes, direcciones IP, etc.</li>
+              
+                <li style="margin-bottom: 10px;"><strong>Normalizacion de datos:</strong> En la preparación de datos para análisis, las expresiones regulares pueden utilizarse para normalizar formatos de datos inconsistentes, como fechas o nombres.</li>
+
+                <li style="margin-bottom: 10px;"><strong>Procesamiento de Lenguaje Natural (NLP):</strong> En el campo del procesamiento de lenguaje natural, las expresiones regulares pueden ser útiles para tokenizar texto, encontrar patrones lingüísticos específicos, y realizar otras tareas de preprocesamiento de datos.</li>
+              
+                <li><strong>Web Scraping:</strong> En la extracción de datos de páginas web, las expresiones regulares son herramientas valiosas para identificar y extraer información específica de la estructura HTML.</li>
+              </ul>
+        </div>
+        <button class="button">Ejemplos</button>
+        <div class="content" style="height: 300px; overflow-y: auto;">
+            <!-- Contenido para "Ejemplos" -->
+            <p style="margin-bottom: 7px;">Ejemplo: Validar una dirección de correo electrónico.</p>
+            <img src="img/email.jpg" style="display: block; margin: 0 auto; width: 390px; height: 230px;">
+        
+            <p style="margin-bottom: 7px;">Ejemplo: Validar una URL.</p>
+            <img src="img/url.jpg" style="display: block; margin: 0 auto; width: 390px; height: 230px;"> 
+        
+            <p style="margin-bottom: 7px;">Ejemplo: Validar una IP.</p>
+            <img src="img/ip.jpg" style="display: block; margin: 0 auto; width: 390px; height: 230px;"> 
+        
+            <p style="margin-bottom: 7px;">Ejemplo: Validar una URL.</p>
+            <img src="img/hex.jpg" style="display: block; margin: 0 auto; width: 390px; height: 230px;"> 
+        </div>
+        <button class="button">Conclusion</button>
+        <div class="content">
+            <!-- Contenido para "Conclusion" -->
+            Como estudiante de sistemas, puedo concluir que las expresiones regulares representan una herramienta esencial en el desarrollo de software y la manipulación de datos. Su versatilidad y capacidad para buscar, validar y modificar cadenas de texto son indispensables para abordar una variedad de problemas asociados con el procesamiento de texto. Al adquirir habilidades en expresiones regulares, podemos optimizar nuestras tareas de programación, mejorar la eficiencia de nuestros algoritmos y crear aplicaciones más sólidas y funcionales. Por ende, comprender y dominar el uso de expresiones regulares se vuelve crucial para cualquier estudiante de sistemas que busque destacarse en el campo de la informática y la ingeniería de software.
+        </div>
+        <button class="button">Referencias</button>
+        <div class="content">
+            <!-- Contenido para "Referencias" -->
+        <ul style="text-align: justify;">
+            <li style="margin-bottom: 10px;">
+                Expresiones Regulares - JavaScript | MDN. (2023, July 24). MDN Web Docs. https://developer. mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions
+            </li>
+            <li style="margin-bottom: 10px;">
+                VisibleBreadcrumbs. (2023). Mathworks.com. https://la.mathworks.com/help/matlab/matlab_prog/regular-expressions.html
+            </li>
+            <li style="margin-bottom: 10px;">
+                VisibleBreadcrumbs. (2023). Mathworks.com. https://la.mathworks.com/help/matlab/matlab_prog/regular-expressions.html   ‌   
+            </li>
+            <li style="margin-bottom: 10px;">
+                Vasili. (2022, October 23). 8 Expresiones regulares, que debes conocer. Code Envato Tuts+; Envato Tuts. https://code.tutsplus.com/es/8-regular-expressions-you-should-know--net-6149t
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <script>
+        // Obtener todos los botones y contenidos
+        const buttons = document.querySelectorAll('.button');
+        const contents = document.querySelectorAll('.content');
+
+        // Agregar event listener a cada botón
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                // Mostrar el contenido correspondiente al hacer clic
+                contents.forEach((content, i) => {
+                    if (index === i) {
+                        content.style.display = 'block';
+                    } else {
+                        content.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Función para ocultar el contenido al quitar el mouse si no está dentro del contenedor
+        document.querySelector('.container').addEventListener('mouseleave', (event) => {
+            if (!event.relatedTarget || !event.relatedTarget.closest('.container')) {
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
