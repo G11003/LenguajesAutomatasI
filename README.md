@@ -42,3 +42,11 @@ En la función `main()`, se crea un objeto `Updater` que recibe actualizaciones 
 ## Conclusiones
 
 Este proyecto de desarrollo de un bot de Telegram para la validación de contraseñas proporcionó una experiencia práctica invaluable al estudiante. Pudo aplicar los conceptos teóricos aprendidos en el curso de Lenguajes y Autómatas en un entorno de desarrollo real. Además, el proceso de investigación, planificación y desarrollo del bot le ayudó a mejorar sus habilidades en programación y resolución de problemas. Esta experiencia no solo fortaleció su comprensión de los conceptos de programación, sino que también le proporcionó una herramienta útil que podría compartir y mejorar en el futuro.
+
+## Capturas del funcionamiento del bot
+![Captura de pantalla 2024-04-15 235951](https://github.com/G11003/LenguajesAutomatasI/assets/160692077/c11d9e3b-dd3e-41ad-b260-0c491603978a)
+![Captura de pantalla 2024-04-16 000153](https://github.com/G11003/LenguajesAutomatasI/assets/160692077/48b0e99f-0187-4ed0-afd5-3670dc05416a)
+
+
+
+
