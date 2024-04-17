@@ -1,0 +1,33 @@
+Tarea 2.3
+
+Actividad:
+Expresión regular que valide un Password fuerte
+1 minúscula
+1 mayúscula
+1 numero
+1 carácter especial
+8 caracteres de longitud
+
+Expresión Regular que valide un Nombre de usuario
+Longitud de 3 a 16 caracteres
+Letra o numero o guion medio o bajo
+
+Solucion:
+Validacion de un password fuerte
+'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8}$'
+      ;Ejemplo 
+      abc123 --> X
+      User123  --> X
+      Contr@01 --> Cumple
+      Gabt562 --> X
+      Ga!11dyv --> Cumple
+
+Validacion de un nombre de usuaario
+'^[a-zA-Z0-9_-]{3,16}$'
+      ;Ejemplo 
+      abc123 --> Cumple
+      User123  --> Cumple
+      Contr@01 --> X
+      Gabt562 --> Cumple
+      Ga!11dyv --> X
+      fdvdja --> Cumple
